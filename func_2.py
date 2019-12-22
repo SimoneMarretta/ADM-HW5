@@ -32,3 +32,5 @@ def func_2():
     data_type = input('Which distance to use (t,d,n)?')
     graph, nodes, edges = smartest_network(input_nodes, data_type)
     visualize_2(graph, input_nodes, nodes, edges, coordinates, 100)
+    
+func_2()

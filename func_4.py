@@ -34,3 +34,5 @@ def func_4():
     starting_node = input_nodes[0]
     node_to_visit = input_nodes[1:]
     shortes_route(df_distance, adj_graph, starting_node, node_to_visit, coordinates)
+    
+func_4()
