@@ -3,7 +3,7 @@ This repository contain:
 * `main.py`: the main python file.
 * `load_data.py` : script to load data
 * `MyGraph.py`: Graph class with functionalities for task 2 and 4
-* files: func_1.py, func_2.py, func_3.py, func_4.py
+* files: `func_1.py`, `func_2.py`, `func_3.py`, `func_4.py`
 
 ## Main.py once executed has four functionalities:
   ## func_1
