@@ -5,10 +5,11 @@ try:
 except NameError:
     import load_data
 
+
 def smartest_network(nodes, data_type):
     ''' Implementation of an algorithm that returns the set of roads (edges) that enable the user to visit all the places. 
     The result is achived via minimum spanning tree.'''
-    df, adj = choose_data(data_type)
+    df, adj = load_data.choose_data(data_type)
     graph = MyGraph({'df': df, 'adj': adj })
     nodes = list(nodes)
     print(nodes)
@@ -31,6 +32,6 @@ def func_2():
     input_nodes = set(map(int, input('Write nodes you want to visit').split()))
     data_type = input('Which distance to use (t,d,n)?')
     graph, nodes, edges = smartest_network(input_nodes, data_type)
-    visualize_2(graph, input_nodes, nodes, edges, coordinates, 100)
+    visualize_2(graph, input_nodes, nodes, edges, load_data.coordinates, 100)
     
 func_2()
