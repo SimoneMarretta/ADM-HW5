@@ -100,3 +100,43 @@ def func_1(v,d):
                     distance[i]=t
     return done
 
+
+# In[ ]:
+
+
+#visualization
+l=func_1(v,d)
+pos=[]
+for i in l:
+    pos.append((int(co_data[i][1]),int(co_data[i][2])))
+pos1=dict()
+for i in range(len(list(l))):
+    pos1[list(l)[i]]=pos[i]
+    posinitalnode=dict()
+posinitalnode[v]=((int(co_data[v][1]),int(co_data[v][2])))
+pos=np.array(pos).reshape(-1,2)
+
+l=list(l)
+#node color
+nx.draw_networkx_nodes(graph.subgraph(v),pos=posinitalnode,
+                       nodelist=[v],
+                       node_color='r',
+                       node_size=5,
+                      )
+nx.draw_networkx_nodes(graph.subgraph(l),pos=pos1,
+                       nodelist=l,
+                       node_color='b',
+                       node_size=5,
+                       )
+
+#edge color
+l.append(v)
+pos1[v]=((int(co_data[v][1]),int(co_data[v][2])))
+
+if function==1:
+        nx.draw_networkx_edges(graph.subgraph(l),pos=pos1,width=1.0,alpha=0.5,edge_color='k')
+if function==2:
+        nx.draw_networkx_edges(graph.subgraph(l),pos=pos1,width=1.0,alpha=0.5,edge_color='y')
+if function==3:
+        nx.draw_networkx_edges(graph.subgraph(l),pos=pos1,width=1.0,alpha=0.5,edge_color='g')
+
