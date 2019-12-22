@@ -1,7 +1,8 @@
 # ADM-HW5
 This repository contain:
 * `main.py`: the main python file.
-Main.py once executed has four functionalities:
+
+# Main.py once executed has four functionalities:
   ## func_1
   It takes in input:
 
