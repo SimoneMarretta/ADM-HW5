@@ -1,4 +1,4 @@
-# ciccio
+# ADM-HW5
 This repository contain:
 * `main.py`: the main python file.
 * `load_data.py` : script to load data
